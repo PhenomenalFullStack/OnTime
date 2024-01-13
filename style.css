@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Class*/
+.main {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    background: linear-gradient(to right, #27b0b0, #ff8ed4);
+}
+
+/*Element*/
+nav {
+    width: 75%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Class*/
+.logo {
+    flex-basis: 20%;
+}
+
+/*Class Setting Image*/
+.logo img {
+    width: 200px;
+    position: fixed;
+    right: 950px;
+    left: 5%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+/*Class*/
+.nav-links {
+    flex: 55%;
+    text-align: right;
+}
+
+.nav-links {
+    position: fixed;
+    top: 1%;
+    left: 30%;
+    right: 20%;
+    padding: 10px;
+   /* background-repeat: round;*/
+  }
+
+/*Setting the ul and li*/
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 35px;
+}
+
+.nav-links ul li a {
+    position: fixed;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links ul:hover li a {
+    color: #c7037c;
+}
+
+.nav-links ul:hover li a:not(:hover) {
+    color: #fff;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+.information {
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+
+.feature img {
+    filter: brightness(0) invert(1);
+    width: 70px;
+}
+.feature {
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.feature div {
+    margin-left: 30px;
+}
+.feature div p{
+    margin-top: 8px;
+}
+.one {
+    top: 460px;
+    right: 20px;
+}
+.two {
+    top: 210px;
+    left: 340px;
+    transform: rotate(-90deg);
+}
+.three {
+    bottom: 460px;
+    left: 100px;
+    transform: rotate(-180deg);
+}
+.four {
+    bottom: 210px;
+    left: 350px;
+    transform: rotate(-270deg);
+}
+.five {
+    top: 778px;
+    right: 290px;
+    transform: rotate(-270deg);
+}
+.six {
+    bottom: 750px;
+    right: 310px;
+    transform: rotate(-450deg);
+}
+
+.traffic {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 35%;
+    left: 33%;
+    transform: translateY(-50);
+    z-index: 1;
+}
+
+.controls {
+    position: absolute;
+    right: 15%;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.controls img {
+    width: 40px;
+    filter: brightness(0) invert(1);
+    transform: rotate(180deg);
+}
+
+.controls h3 {
+  margin: -80px 0;
+  color: #fff;
+}
+
+.UpBtn {
+    width: 15px;
+    cursor: pointer;
+}
+
+.DownBtn {
+    width: 15px;
+    cursor: pointer;  
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-bottom: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.link {
+    color: black;
+}
